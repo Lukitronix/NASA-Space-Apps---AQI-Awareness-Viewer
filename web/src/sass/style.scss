@@ -1,0 +1,37 @@
+body.light-theme {
+  --cor-white: #ebe6e0;
+  --cor-black: #202020;
+  --cor-primary: #00ff99;
+}
+
+@import "maplibre-gl/dist/maplibre-gl.css";
+
+// FONTS
+@import "base/fonts";
+
+// Abstracts
+@import "abstracts/functions";
+
+// Define una clase de tema que condicionalmente importará los estilos correctos
+
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+// Base
+@import 'base/general';
+@import 'base/text';
+@import 'base/responsive';
+
+// Layout
+@import "layout/spacing-dimension";
+@import "layout/container";
+@import "layout/flex";
+
+// Pages
+@import "components/hero";
+@import "components/card";
+@import "components/dashboard";
+@import "components/button";
+@import "components/notifications";
+@import "components/navbar";
+@import "components/loader";
